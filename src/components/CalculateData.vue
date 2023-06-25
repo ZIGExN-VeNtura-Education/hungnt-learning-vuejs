@@ -22,6 +22,7 @@
     watch: {
       firstNum() { this.result = '?'},
       lastNum() { this.result = '?'},
+      calOptions() { this.result = '?'},
     },
     methods: {
       calculate: function() {
