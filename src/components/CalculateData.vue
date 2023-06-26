@@ -6,11 +6,11 @@
     <hr>
     <br>
     <div class="results">
-      <span>{{ firstNum || 0 }}</span>
+      <span>{{ firstNum }}</span>
       <span v-if="calOptions == 'plus'"> + </span>
       <span v-else-if="calOptions == 'sub'"> - </span>
       <span v-else> x </span>
-      <span>{{ lastNum || 0 }}</span>
+      <span>{{ lastNum }}</span>
       <span> = </span>
       <span> {{ result }} </span>
     </div>
@@ -18,7 +18,20 @@
 </template>
 <script>
   export default {
-    props: ['firstNum', 'lastNum', 'calOptions'],
+    props: {
+      firstNum: {
+        default: 0,
+        type: Number
+      },
+      lastNum: {
+        default: 0,
+        type: Number
+      },
+      calOptions: {
+        default: 'plus',
+        type: String
+      },
+    },
     watch: {
       firstNum() { this.result = '?'},
       lastNum() { this.result = '?'},

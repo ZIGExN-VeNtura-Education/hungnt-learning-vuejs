@@ -2,12 +2,11 @@
   import CalculateData from '../components/CalculateData.vue'
 </script>
 <script>
-
   export default {
     data() {
       return {
-        firstNum: '',
-        lastNum: '',
+        firstNum: 0,
+        lastNum: 0,
         calOptions: 'plus'
       }
     }
