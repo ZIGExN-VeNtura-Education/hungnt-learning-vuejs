@@ -1,9 +1,14 @@
 <script setup>
-import LoginForm from '../components/LoginForm.vue'
+  import InputData from '../components/InputData.vue'
 </script>
 
 <template>
   <main>
-    <LoginForm />
+    <router-link to="/login">Login</router-link>
+    <br>
+    <hr>
+    <br>
+    <!-- <LoginForm /> -->
+    <InputData />
   </main>
 </template>
