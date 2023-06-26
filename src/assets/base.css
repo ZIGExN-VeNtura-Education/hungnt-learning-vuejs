@@ -107,3 +107,7 @@ form button[type="submit"] {
     float: unset;
   }
 }
+p.err {
+  font-size: 13px;
+  color: red;
+}
