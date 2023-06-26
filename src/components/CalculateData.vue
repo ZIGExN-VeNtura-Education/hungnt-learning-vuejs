@@ -21,15 +21,18 @@
     props: {
       firstNum: {
         default: 0,
-        type: Number
+        type: Number,
+        required: true
       },
       lastNum: {
         default: 0,
-        type: Number
+        type: Number,
+        required: true
       },
       calOptions: {
         default: 'plus',
-        type: String
+        type: String,
+        required: true
       },
     },
     watch: {
